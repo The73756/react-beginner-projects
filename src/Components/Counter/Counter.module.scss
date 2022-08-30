@@ -1,0 +1,83 @@
+/* stylelint-disable scss/no-global-function-names */
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #edf6f9;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 7rem;
+    color: #000;
+
+    &.plus {
+      color: #2a9d8f;
+    }
+
+    &.minus {
+      color: #e63946;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #556581;
+  }
+
+  button {
+    margin: 0 10px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 22px;
+    text-align: center;
+    background: transparent;
+    transition: all 0.05s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+
+    &.minus {
+      border: 1px solid darken(#e63946, 15%);
+      box-shadow: 0 4px 0 darken(#e63946, 10%);
+      color: #fff;
+      background-color: #e63946;
+    }
+
+    &.plus {
+      border: 1px solid darken(#2a9d8f, 15%);
+      box-shadow: 0 4px 0 darken(#2a9d8f, 10%);
+      color: #fff;
+      background-color: #2a9d8f;
+    }
+  }
+}
