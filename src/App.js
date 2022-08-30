@@ -6,7 +6,10 @@ export const App = () => {
   return (
     <main className='container'>
       <Link className='link' to='/counter'>
-        Counter
+        Счетчик
+      </Link>
+      <Link className='link' to='/modal'>
+        Модалка
       </Link>
     </main>
   );
