@@ -26,7 +26,7 @@ export const Modal = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div>
       <button className={styles.openModalBtn} onClick={handleClick}>
         ✨ Открыть окно
       </button>

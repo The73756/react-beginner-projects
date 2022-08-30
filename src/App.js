@@ -11,6 +11,9 @@ export const App = () => {
       <Link className='link' to='/modal'>
         Модалка
       </Link>
+      <Link className='link' to='/quiz'>
+        Опросник
+      </Link>
     </main>
   );
 };
