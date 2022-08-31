@@ -14,6 +14,9 @@ export const App = () => {
       <Link className='link' to='/quiz'>
         Опросник
       </Link>
+      <Link className='link' to='/users'>
+        Список пользователей
+      </Link>
     </main>
   );
 };
