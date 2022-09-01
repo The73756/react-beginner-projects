@@ -17,6 +17,9 @@ export const App = () => {
       <Link className='link' to='/users'>
         Список пользователей
       </Link>
+      <Link className='link' to='/currencyConvertor'>
+        Конвертер валют
+      </Link>
     </main>
   );
 };
