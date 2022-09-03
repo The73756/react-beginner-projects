@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Block } from './Block';
 import styles from './CurrencyConvertor.module.scss';
 
@@ -10,21 +9,18 @@ export const СurrencyConvertor = () => {
   const [toPrice, setToPrice] = useState(1);
 
   const ratesRef = useRef({});
-  const rates = ratesRef.current;
 
   const onChangeFromPrice = (value) => {
-    const price = value / rates[fromCurrency];
-    const result = price * rates[toCurrency];
-    setToPrice(result);
+    const price = value / ratesRef.current[fromCurrency];
+    const result = price * ratesRef.current[toCurrency];
     setFromPrice(value);
-    console.log(rates[toCurrency]);
+    setToPrice(result.toFixed(2));
   };
 
   const onChangeToPrice = (value) => {
-    const result = (rates[fromCurrency] / rates[toCurrency]) * value;
-    setFromPrice(result);
+    const result = (ratesRef.current[fromCurrency] / ratesRef.current[toCurrency]) * value;
     setToPrice(value);
-    console.log(value);
+    setFromPrice(result.toFixed(2));
   };
 
   useEffect(() => {
@@ -42,11 +38,11 @@ export const СurrencyConvertor = () => {
 
   useEffect(() => {
     onChangeFromPrice(fromPrice);
-  }, [fromPrice]);
+  }, [fromCurrency]);
 
   useEffect(() => {
     onChangeToPrice(toPrice);
-  }, [toPrice]);
+  }, [toCurrency]);
 
   return (
     <div className={styles.container}>
