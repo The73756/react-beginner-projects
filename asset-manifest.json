@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-beginner-projects/static/css/main.be8d1a9a.css",
+    "main.js": "/react-beginner-projects/static/js/main.2f08ef37.js",
+    "static/media/success.svg": "/react-beginner-projects/static/media/success.4e08f49e92f6329b379e8b6827203a42.svg",
+    "index.html": "/react-beginner-projects/index.html",
+    "static/media/plus.svg": "/react-beginner-projects/static/media/plus.1931cf72fa3019e723886b136ffe0eee.svg",
+    "static/media/minus.svg": "/react-beginner-projects/static/media/minus.494f644a0286985edebe0fb3f79390a0.svg",
+    "main.be8d1a9a.css.map": "/react-beginner-projects/static/css/main.be8d1a9a.css.map",
+    "main.2f08ef37.js.map": "/react-beginner-projects/static/js/main.2f08ef37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be8d1a9a.css",
+    "static/js/main.2f08ef37.js"
+  ]
+}
