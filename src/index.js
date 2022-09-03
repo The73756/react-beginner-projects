@@ -7,6 +7,7 @@ import { Modal } from './Modules/Modal';
 import { Quiz } from './Modules/Quiz';
 import { Users } from './Modules/Users';
 import { СurrencyConvertor } from './Modules/CurrencyConvertor';
+import { Photos } from './Modules/Photos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -20,6 +21,7 @@ root.render(
         <Route path='/quiz' element={<Quiz />} />
         <Route path='/users' element={<Users />} />
         <Route path='/currencyConvertor' element={<СurrencyConvertor />} />
+        <Route path='/photos' element={<Photos />} />
       </Routes>
     </React.StrictMode>
   </HashRouter>,

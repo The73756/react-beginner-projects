@@ -1,0 +1,155 @@
+@import "https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap";
+
+.photos {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #fff;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #000;
+    }
+
+    &:disabled {
+      &:hover {
+        border-color: transparent;
+      }
+    }
+
+    &.active {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 40px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.collection {
+  border-radius: 30px;
+  padding: 30px;
+  max-width: 470px;
+  box-shadow: 0 3px 0 rgb(0 0 0 / 5%);
+  background-color: #fff;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+
+  h4 {
+    margin: 0;
+    margin-top: 15px;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  &__big {
+    margin-bottom: 15px;
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mini {
+    border-radius: 20px;
+    width: 31%;
+    height: 80px;
+  }
+
+  &:hover {
+    box-shadow: 0 20px 30px rgb(0 0 0 / 10%);
+    transform: translateY(-5px);
+  }
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchInput {
+  outline: none;
+  border: 1px solid rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  padding: 0 15px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  transition: all 0.15s ease-in-out;
+
+  &:focus {
+    border: 1px solid rgb(0 0 0 / 40%);
+  }
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 10px 17px;
+    font-size: 18px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &.active {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+}

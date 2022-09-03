@@ -20,6 +20,9 @@ export const App = () => {
       <Link className='link' to='/currencyConvertor'>
         Конвертер валют
       </Link>
+      <Link className='link' to='/photos'>
+        Коллекция фотографий
+      </Link>
     </main>
   );
 };
